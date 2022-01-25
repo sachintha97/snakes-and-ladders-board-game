@@ -1,0 +1,4 @@
+digraph {
+SnakesAndLaddersGame [ label=" SnakesAndLaddersGame " shape= box ]
+
+}
