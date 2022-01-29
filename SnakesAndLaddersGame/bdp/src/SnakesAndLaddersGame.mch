@@ -13,7 +13,7 @@ CONCRETE_CONSTANTS
     snakesPositions ,
     laddersPositions ,
     diceValues ,
-    lastSqure
+    lastSquare
 
 PROPERTIES
     boardSquare <: NAT1 & boardSquare = 1 .. 100 &
@@ -22,7 +22,7 @@ PROPERTIES
     laddersPositions : POW ( NAT1 * NAT1 ) &
     laddersPositions = { ( 3 |-> 39 ) , ( 10 |-> 12 ) , ( 27 |-> 53 ) , ( 56 |-> 84 ) , ( 61 |-> 99 ) , ( 72 |-> 90 ) } &
     diceValues = { 1 , 2 , 3 , 4 , 5 , 6 } &
-    lastSqure = 100
+    lastSquare = 100
 
 
 
@@ -34,8 +34,8 @@ ABSTRACT_VARIABLES
     next_position ,
     visited_square ,
     number_moves ,
-    snake_gone_down ,
-    ladder_gone_up ,
+    number_snakes_encounter ,
+    number_ladders_encounter ,
     dice_value_lastthrown ,
     dice_value
 
@@ -44,8 +44,8 @@ INVARIANT
     next_position : NAT &
     visited_square : seq ( boardSquare ) &
     number_moves : NAT &
-    snake_gone_down : NAT &
-    ladder_gone_up : NAT &
+    number_snakes_encounter : NAT &
+    number_ladders_encounter : NAT &
     dice_value_lastthrown : diceValues &
     dice_value : diceValues
 
@@ -55,8 +55,8 @@ INITIALISATION
     next_position := 0 ||
     visited_square := <> ||
     number_moves := 0 ||
-    snake_gone_down := 0 ||
-    ladder_gone_up := 0 ||
+    number_snakes_encounter := 0 ||
+    number_ladders_encounter := 0 ||
     dice_value_lastthrown := 0 ||
     dice_value := 0
 
@@ -64,7 +64,7 @@ OPERATIONS
     // Operation for dice roll
     DiceRollValue ( rollValue ) =
     PRE
-        rollValue : diceValues & not ( ( current_position = lastSqure ) )
+        rollValue : diceValues & not ( ( current_position = lastSquare ) )
     THEN
         dice_value_lastthrown := rollValue ||
         dice_value := rollValue ||
@@ -73,9 +73,9 @@ OPERATIONS
     END ;
 
     // Operation for move
-    report <-- Move =
+    report , moveSquare <-- Move =
     PRE
-        report : REPORT & ( dice_value >= 1 ) & ( dice_value <= 6 ) & not ( ( current_position = lastSqure ) )
+        report : REPORT & ( dice_value >= 1 ) & ( dice_value <= 6 ) & not ( ( current_position = lastSquare ) )
     THEN
         // Check whether landed on the snakes head 
         IF
@@ -84,9 +84,10 @@ OPERATIONS
             current_position := snakesPositions ( next_position ) ||
             visited_square := visited_square <- next_position \/ visited_square <- snakesPositions ( next_position ) ||
             number_moves := succ ( number_moves ) ||
-            snake_gone_down := succ ( snake_gone_down ) ||
+            number_snakes_encounter := succ ( number_snakes_encounter ) ||
             dice_value := 0 ||
             next_position := snakesPositions ( next_position ) ||
+            moveSquare := snakesPositions ( next_position ) ||
             report := WENT_DOWN_A_SNAKE
         // Check whether landed on the ladder's bottom 
         ELSIF
@@ -95,24 +96,27 @@ OPERATIONS
             current_position := laddersPositions ( next_position ) ||
             visited_square := visited_square <- next_position \/ visited_square <- laddersPositions ( next_position ) ||
             number_moves := succ ( number_moves ) ||
-            ladder_gone_up := succ ( ladder_gone_up ) ||
+            number_ladders_encounter := succ ( number_ladders_encounter ) ||
             dice_value := 0 ||
             next_position := laddersPositions ( next_position ) ||
+            moveSquare := laddersPositions ( next_position ) ||
             report := GO_UP_A_LADDER
         // Check whether the player is inside the board or not     
         ELSIF
             not ( ( next_position : boardSquare ) )
         THEN
             dice_value := 0 ||
+            moveSquare := next_position ||
             report := THREW_TOO_HIGH_A_DEVICE_VALUE_TO_FINISH
         // Check whether landed on the last square     
         ELSIF
-            ( next_position = lastSqure )
+            ( next_position = lastSquare )
         THEN
             current_position := next_position ||
             visited_square := visited_square <- next_position ||
             number_moves := succ ( number_moves ) ||
             dice_value := 0 ||
+            moveSquare := next_position ||
             report := GAME_FINISHED_AND_WON_PLEASE_START_A_NEW_GAME
         // Landed on normal square    
         ELSE
@@ -120,6 +124,7 @@ OPERATIONS
             visited_square := visited_square <- next_position ||
             number_moves := succ ( number_moves ) ||
             dice_value := 0 ||
+            moveSquare := next_position ||
             report := LANDED_ON_A_NORMAL_SQUARE
         END
     END ;
@@ -128,8 +133,8 @@ OPERATIONS
     currentPosition , encounteredSnakes , encounteredLadders , numTurnsTaken <-- GameStatistics =
     BEGIN
         currentPosition := current_position ||
-        encounteredSnakes := snake_gone_down ||
-        encounteredLadders := ladder_gone_up ||
+        encounteredSnakes := number_snakes_encounter ||
+        encounteredLadders := number_ladders_encounter ||
         numTurnsTaken := number_moves
     END ;
 
@@ -148,8 +153,8 @@ OPERATIONS
         next_position := 0 ||
         visited_square := <> ||
         number_moves := 0 ||
-        snake_gone_down := 0 ||
-        ladder_gone_up := 0 ||
+        number_snakes_encounter := 0 ||
+        number_ladders_encounter := 0 ||
         dice_value_lastthrown := 0 ||
         dice_value := 0 ||
         report := NEW_GAME_HAS_STARTED
