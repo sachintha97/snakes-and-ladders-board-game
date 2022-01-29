@@ -4,21 +4,81 @@ graph [nodesep=1.5, ranksep=1.5];
 
 1 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 0,next_position = 0,visited_square = [],\nnumber_moves = 0,number_snakes_encounter = 0,number_ladders_encounter = 0,\ndice_value_lastthrown = 0,dice_value = 0"];
 
-7 [shape=box, style=filled, color="#FF3800", fontsize=12, penwidth=2, label="current_position = 0,next_position = 6,visited_square = [],\nnumber_moves = 0,number_snakes_encounter = 0,number_ladders_encounter = 0,\ndice_value_lastthrown = 6,dice_value = 6"];
+7 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 0,next_position = 6,visited_square = [],\nnumber_moves = 0,number_snakes_encounter = 0,number_ladders_encounter = 0,\ndice_value_lastthrown = 6,dice_value = 6"];
 
-8 [shape=box, style=filled, color="#FF3800", fontsize=12, penwidth=2, label="current_position = 6,next_position = 6,visited_square(1) = 6,\nnumber_moves = 1,number_snakes_encounter = 0,number_ladders_encounter = 0,\ndice_value_lastthrown = 6,dice_value = 0"];
+8 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 6,next_position = 6,visited_square(1) = 6,\nnumber_moves = 1,number_snakes_encounter = 0,number_ladders_encounter = 0,\ndice_value_lastthrown = 6,dice_value = 0"];
 
-12 [shape=box, style=filled, color="#FF3800", fontsize=12, penwidth=2, label="current_position = 6,next_position = 10,visited_square(1) = 6,\nnumber_moves = 1,number_snakes_encounter = 0,number_ladders_encounter = 0,\ndice_value_lastthrown = 4,dice_value = 4"];
+12 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 6,next_position = 10,visited_square(1) = 6,\nnumber_moves = 1,number_snakes_encounter = 0,number_ladders_encounter = 0,\ndice_value_lastthrown = 4,dice_value = 4"];
 
-15 [shape=box, style=filled, color="#FF3800", fontsize=12, penwidth=2, label="current_position = 12,next_position = 12,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,number_moves = 2,\nnumber_snakes_encounter = 0,number_ladders_encounter = 1,dice_value_lastthrown = 4,\ndice_value = 0"];
+15 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 12,next_position = 12,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,number_moves = 2,\nnumber_snakes_encounter = 0,number_ladders_encounter = 1,dice_value_lastthrown = 4,\ndice_value = 0"];
 
-20 [shape=box, style=filled, color="#FF3800", fontsize=12, penwidth=2, label="current_position = 12,next_position = 17,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,number_moves = 2,\nnumber_snakes_encounter = 0,number_ladders_encounter = 1,dice_value_lastthrown = 5,\ndice_value = 5"];
+19 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 12,next_position = 16,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,number_moves = 2,\nnumber_snakes_encounter = 0,number_ladders_encounter = 1,dice_value_lastthrown = 4,\ndice_value = 4"];
 
-22 [shape=doubleoctagon, style=filled, color="#FF3800", fontsize=12, penwidth=2, label="current_position = 17,next_position = 17,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 17,\nnumber_moves = 3,number_snakes_encounter = 0,number_ladders_encounter = 1,\ndice_value_lastthrown = 5,dice_value = 0"];
+22 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 13,next_position = 13,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,number_moves = 3,number_snakes_encounter = 1,\nnumber_ladders_encounter = 1,dice_value_lastthrown = 4,dice_value = 0"];
+
+28 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 13,next_position = 19,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,number_moves = 3,number_snakes_encounter = 1,\nnumber_ladders_encounter = 1,dice_value_lastthrown = 6,dice_value = 6"];
+
+29 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 19,next_position = 19,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,number_moves = 4,\nnumber_snakes_encounter = 1,number_ladders_encounter = 1,dice_value_lastthrown = 6,\ndice_value = 0"];
+
+32 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 19,next_position = 22,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,number_moves = 4,\nnumber_snakes_encounter = 1,number_ladders_encounter = 1,dice_value_lastthrown = 3,\ndice_value = 3"];
+
+36 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 22,next_position = 22,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nnumber_moves = 5,number_snakes_encounter = 1,number_ladders_encounter = 1,\ndice_value_lastthrown = 3,dice_value = 0"];
+
+41 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 22,next_position = 27,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nnumber_moves = 5,number_snakes_encounter = 1,number_ladders_encounter = 1,\ndice_value_lastthrown = 5,dice_value = 5"];
+
+43 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 53,next_position = 53,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,number_moves = 6,\nnumber_snakes_encounter = 1,number_ladders_encounter = 2,dice_value_lastthrown = 5,\ndice_value = 0"];
+
+44 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 53,next_position = 54,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,number_moves = 6,\nnumber_snakes_encounter = 1,number_ladders_encounter = 2,dice_value_lastthrown = 1,\ndice_value = 1"];
+
+50 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 54,next_position = 54,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nnumber_moves = 7,number_snakes_encounter = 1,number_ladders_encounter = 2,\ndice_value_lastthrown = 1,dice_value = 0"];
+
+56 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 54,next_position = 60,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nnumber_moves = 7,number_snakes_encounter = 1,number_ladders_encounter = 2,\ndice_value_lastthrown = 6,dice_value = 6"];
+
+57 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 60,next_position = 60,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,number_moves = 8,number_snakes_encounter = 1,\nnumber_ladders_encounter = 2,dice_value_lastthrown = 6,dice_value = 0"];
+
+61 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 60,next_position = 64,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,number_moves = 8,number_snakes_encounter = 1,\nnumber_ladders_encounter = 2,dice_value_lastthrown = 4,dice_value = 4"];
+
+64 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 64,next_position = 64,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,number_moves = 9,\nnumber_snakes_encounter = 1,number_ladders_encounter = 2,dice_value_lastthrown = 4,\ndice_value = 0"];
+
+70 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 64,next_position = 70,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,number_moves = 9,\nnumber_snakes_encounter = 1,number_ladders_encounter = 2,dice_value_lastthrown = 6,\ndice_value = 6"];
+
+71 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 70,next_position = 70,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,visited_square(13) = 70,\nnumber_moves = 10,number_snakes_encounter = 1,number_ladders_encounter = 2,\ndice_value_lastthrown = 6,dice_value = 0"];
+
+73 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 70,next_position = 72,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,visited_square(13) = 70,\nnumber_moves = 10,number_snakes_encounter = 1,number_ladders_encounter = 2,\ndice_value_lastthrown = 2,dice_value = 2"];
+
+78 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 90,next_position = 90,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,visited_square(13) = 70,\nvisited_square(14) = 72,visited_square(15) = 90,number_moves = 11,\nnumber_snakes_encounter = 1,number_ladders_encounter = 3,dice_value_lastthrown = 2,\ndice_value = 0"];
+
+83 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 90,next_position = 95,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,visited_square(13) = 70,\nvisited_square(14) = 72,visited_square(15) = 90,number_moves = 11,\nnumber_snakes_encounter = 1,number_ladders_encounter = 3,dice_value_lastthrown = 5,\ndice_value = 5"];
+
+85 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 95,next_position = 95,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,visited_square(13) = 70,\nvisited_square(14) = 72,visited_square(15) = 90,visited_square(16) = 95,\nnumber_moves = 12,number_snakes_encounter = 1,number_ladders_encounter = 3,\ndice_value_lastthrown = 5,dice_value = 0"];
+
+88 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 95,next_position = 98,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,visited_square(13) = 70,\nvisited_square(14) = 72,visited_square(15) = 90,visited_square(16) = 95,\nnumber_moves = 12,number_snakes_encounter = 1,number_ladders_encounter = 3,\ndice_value_lastthrown = 3,dice_value = 3"];
+
+92 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 98,next_position = 98,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,visited_square(13) = 70,\nvisited_square(14) = 72,visited_square(15) = 90,visited_square(16) = 95,\nvisited_square(17) = 98,number_moves = 13,number_snakes_encounter = 1,\nnumber_ladders_encounter = 3,dice_value_lastthrown = 3,dice_value = 0"];
+
+93 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 98,next_position = 99,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,visited_square(13) = 70,\nvisited_square(14) = 72,visited_square(15) = 90,visited_square(16) = 95,\nvisited_square(17) = 98,number_moves = 13,number_snakes_encounter = 1,\nnumber_ladders_encounter = 3,dice_value_lastthrown = 1,dice_value = 1"];
+
+95 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 98,next_position = 101,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,visited_square(13) = 70,\nvisited_square(14) = 72,visited_square(15) = 90,visited_square(16) = 95,\nvisited_square(17) = 98,number_moves = 13,number_snakes_encounter = 1,\nnumber_ladders_encounter = 3,dice_value_lastthrown = 3,dice_value = 3"];
+
+96 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 98,next_position = 102,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,visited_square(13) = 70,\nvisited_square(14) = 72,visited_square(15) = 90,visited_square(16) = 95,\nvisited_square(17) = 98,number_moves = 13,number_snakes_encounter = 1,\nnumber_ladders_encounter = 3,dice_value_lastthrown = 4,dice_value = 4"];
+
+100 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 98,next_position = 102,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,visited_square(13) = 70,\nvisited_square(14) = 72,visited_square(15) = 90,visited_square(16) = 95,\nvisited_square(17) = 98,number_moves = 13,number_snakes_encounter = 1,\nnumber_ladders_encounter = 3,dice_value_lastthrown = 4,dice_value = 0"];
+
+101 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 98,next_position = 101,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,visited_square(13) = 70,\nvisited_square(14) = 72,visited_square(15) = 90,visited_square(16) = 95,\nvisited_square(17) = 98,number_moves = 13,number_snakes_encounter = 1,\nnumber_ladders_encounter = 3,dice_value_lastthrown = 3,dice_value = 0"];
+
+102 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 99,next_position = 99,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,visited_square(13) = 70,\nvisited_square(14) = 72,visited_square(15) = 90,visited_square(16) = 95,\nvisited_square(17) = 98,visited_square(18) = 99,number_moves = 14,\nnumber_snakes_encounter = 1,number_ladders_encounter = 3,dice_value_lastthrown = 1,\ndice_value = 0"];
+
+103 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 99,next_position = 100,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,visited_square(13) = 70,\nvisited_square(14) = 72,visited_square(15) = 90,visited_square(16) = 95,\nvisited_square(17) = 98,visited_square(18) = 99,number_moves = 14,\nnumber_snakes_encounter = 1,number_ladders_encounter = 3,dice_value_lastthrown = 1,\ndice_value = 1"];
+
+105 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 99,next_position = 102,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,visited_square(13) = 70,\nvisited_square(14) = 72,visited_square(15) = 90,visited_square(16) = 95,\nvisited_square(17) = 98,visited_square(18) = 99,number_moves = 14,\nnumber_snakes_encounter = 1,number_ladders_encounter = 3,dice_value_lastthrown = 3,\ndice_value = 3"];
+
+109 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 99,next_position = 102,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,visited_square(13) = 70,\nvisited_square(14) = 72,visited_square(15) = 90,visited_square(16) = 95,\nvisited_square(17) = 98,visited_square(18) = 99,number_moves = 14,\nnumber_snakes_encounter = 1,number_ladders_encounter = 3,dice_value_lastthrown = 3,\ndice_value = 0"];
+
+110 [shape=doubleoctagon, color="#99BF38", fontsize=12, penwidth=2, label="current_position = 100,next_position = 100,visited_square(1) = 6,\nvisited_square(2) = 10,visited_square(3) = 12,visited_square(4) = 16,\nvisited_square(5) = 13,visited_square(6) = 19,visited_square(7) = 22,\nvisited_square(8) = 27,visited_square(9) = 53,visited_square(10) = 54,\nvisited_square(11) = 60,visited_square(12) = 64,visited_square(13) = 70,\nvisited_square(14) = 72,visited_square(15) = 90,visited_square(16) = 95,\nvisited_square(17) = 98,visited_square(18) = 99,visited_square(19) = 100,\nnumber_moves = 15,number_snakes_encounter = 1,number_ladders_encounter = 3,\ndice_value_lastthrown = 1,dice_value = 0"];
 
 root [shape=invtriangle, color="#99BF38", fontsize=12, penwidth=2, label="root"];
 
-root -> 0 [style = dotted, color = black, label="PARTIAL_SETUP_CONSTANTS", fontsize=12];
+root -> 0 [style = dotted, color = black, label="SETUP_CONSTANTS", fontsize=12];
 
 0 -> 1 [color = "#006391", label="INITIALISATION", fontsize=12];
 
@@ -30,8 +90,68 @@ root -> 0 [style = dotted, color = black, label="PARTIAL_SETUP_CONSTANTS", fonts
 
 12 -> 15 [color = "#006391", label="Move--\>GO_UP_A_LADDER,12", fontsize=12];
 
-15 -> 20 [color = "#006391", label="DiceRollValue(5)", fontsize=12];
+15 -> 19 [color = "#006391", label="DiceRollValue(4)", fontsize=12];
 
-20 -> 22 [color = "#006391", label="Move--\>LANDED_ON_A_NORMAL_SQUARE,17", fontsize=12];
+19 -> 22 [color = "#006391", label="Move--\>WENT_DOWN_A_SNAKE,13", fontsize=12];
+
+22 -> 28 [color = "#006391", label="DiceRollValue(6)", fontsize=12];
+
+28 -> 29 [color = "#006391", label="Move--\>LANDED_ON_A_NORMAL_SQUARE,19", fontsize=12];
+
+29 -> 32 [color = "#006391", label="DiceRollValue(3)", fontsize=12];
+
+32 -> 36 [color = "#006391", label="Move--\>LANDED_ON_A_NORMAL_SQUARE,22", fontsize=12];
+
+36 -> 41 [color = "#006391", label="DiceRollValue(5)", fontsize=12];
+
+41 -> 43 [color = "#006391", label="Move--\>GO_UP_A_LADDER,53", fontsize=12];
+
+43 -> 44 [color = "#006391", label="DiceRollValue(1)", fontsize=12];
+
+44 -> 50 [color = "#006391", label="Move--\>LANDED_ON_A_NORMAL_SQUARE,54", fontsize=12];
+
+50 -> 56 [color = "#006391", label="DiceRollValue(6)", fontsize=12];
+
+56 -> 57 [color = "#006391", label="Move--\>LANDED_ON_A_NORMAL_SQUARE,60", fontsize=12];
+
+57 -> 61 [color = "#006391", label="DiceRollValue(4)", fontsize=12];
+
+61 -> 64 [color = "#006391", label="Move--\>LANDED_ON_A_NORMAL_SQUARE,64", fontsize=12];
+
+64 -> 70 [color = "#006391", label="DiceRollValue(6)", fontsize=12];
+
+70 -> 71 [color = "#006391", label="Move--\>LANDED_ON_A_NORMAL_SQUARE,70", fontsize=12];
+
+71 -> 73 [color = "#006391", label="DiceRollValue(2)", fontsize=12];
+
+73 -> 78 [color = "#006391", label="Move--\>GO_UP_A_LADDER,90", fontsize=12];
+
+78 -> 83 [color = "#006391", label="DiceRollValue(5)", fontsize=12];
+
+83 -> 85 [color = "#006391", label="Move--\>LANDED_ON_A_NORMAL_SQUARE,95", fontsize=12];
+
+85 -> 88 [color = "#006391", label="DiceRollValue(3)", fontsize=12];
+
+88 -> 92 [color = "#006391", label="Move--\>LANDED_ON_A_NORMAL_SQUARE,98", fontsize=12];
+
+92 -> 96 [color = "#006391", label="DiceRollValue(4)", fontsize=12];
+
+96 -> 100 [color = "#006391", label="Move--\>THREW_TOO_HIGH_A_DEVICE_VALUE_TO_FINISH,98", fontsize=12];
+
+100 -> 95 [color = "#006391", label="DiceRollValue(3)", fontsize=12];
+
+95 -> 101 [color = "#006391", label="Move--\>THREW_TOO_HIGH_A_DEVICE_VALUE_TO_FINISH,98", fontsize=12];
+
+101 -> 93 [color = "#006391", label="DiceRollValue(1)", fontsize=12];
+
+93 -> 102 [color = "#006391", label="Move--\>LANDED_ON_A_NORMAL_SQUARE,99", fontsize=12];
+
+102 -> 105 [color = "#006391", label="DiceRollValue(3)", fontsize=12];
+
+105 -> 109 [color = "#006391", label="Move--\>THREW_TOO_HIGH_A_DEVICE_VALUE_TO_FINISH,99", fontsize=12];
+
+109 -> 103 [color = "#006391", label="DiceRollValue(1)", fontsize=12];
+
+103 -> 110 [color = "#006391", label="Move--\>GAME_FINISHED_AND_WON_PLEASE_START_A_NEW_GA\nME,100", fontsize=12];
 
 }

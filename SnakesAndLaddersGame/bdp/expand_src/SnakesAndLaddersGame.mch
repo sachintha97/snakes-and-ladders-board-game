@@ -17,11 +17,9 @@ CONCRETE_CONSTANTS
 
 PROPERTIES
     boardSquare <: NAT1 & boardSquare = 1 .. 100 &
-    snakesPositions : POW ( NAT1 * NAT1 ) &
-    snakesPositions = { ( 16 |-> 13 ) , ( 31 |-> 4 ) , ( 47 |-> 25 ) , ( 63 |-> 60 ) , ( 66 |-> 52 ) , ( 97 |-> 75 ) } &
-    laddersPositions : POW ( NAT1 * NAT1 ) &
-    laddersPositions = { ( 3 |-> 39 ) , ( 10 |-> 12 ) , ( 27 |-> 53 ) , ( 56 |-> 84 ) , ( 61 |-> 99 ) , ( 72 |-> 90 ) } &
-    diceValues = { 1 , 2 , 3 , 4 , 5 , 6 } &
+    snakesPositions : boardSquare <-> boardSquare & snakesPositions = { ( 16 |-> 13 ) , ( 31 |-> 4 ) , ( 47 |-> 25 ) , ( 63 |-> 60 ) , ( 66 |-> 52 ) , ( 97 |-> 75 ) } &
+    laddersPositions : boardSquare <-> boardSquare & laddersPositions = { ( 3 |-> 39 ) , ( 10 |-> 12 ) , ( 27 |-> 53 ) , ( 56 |-> 84 ) , ( 61 |-> 99 ) , ( 72 |-> 90 ) } &
+    diceValues <: NAT & diceValues = 1 .. 6 &
     lastSquare = 100
 
 DEFINITIONS
@@ -40,14 +38,14 @@ ABSTRACT_VARIABLES
     dice_value
 
 INVARIANT
-    current_position : boardSquare &
+    current_position : { 0 } \/ boardSquare &
     next_position : NAT &
     visited_square : seq ( boardSquare ) &
     number_moves : NAT &
     number_snakes_encounter : NAT &
     number_ladders_encounter : NAT &
-    dice_value_lastthrown : diceValues &
-    dice_value : diceValues
+    dice_value_lastthrown : { 0 } \/ diceValues &
+    dice_value : { 0 } \/ diceValues
 
 
 INITIALISATION
@@ -103,10 +101,10 @@ OPERATIONS
             report := GO_UP_A_LADDER
         // Check whether the player is inside the board or not     
         ELSIF
-            not ( isInsideBoard ( next_position ) )
+            ( next_position > 100 )
         THEN
             dice_value := 0 ||
-            moveSquare := next_position ||
+            moveSquare := current_position ||
             report := THREW_TOO_HIGH_A_DEVICE_VALUE_TO_FINISH
         // Check whether landed on the last square     
         ELSIF
